@@ -1,0 +1,196 @@
+.main-content {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.wrapped {
+    display: flex;
+    justify-content: space-between;
+}
+
+.innovation {
+    display: flex;
+    flex-direction: column;
+    max-width: 525px;
+    width: 100%;
+    background-color: var(--secondary);
+    padding-top: 35px;
+    padding-bottom: 0;
+    margin-bottom: 80px;
+}
+
+.innovation div {
+    padding-left: 40px;
+    margin-bottom: 45px;
+}
+
+.innovation span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: var(--primary);
+    padding: 10px 15px;
+    max-width: 125px;
+    margin-bottom: 40px;
+}
+
+.innovation h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 150%;
+    color: #FFFFFF;
+    max-width: 485px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.innovation button {
+    background-image: url("../images/arrow-right.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 25px 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.innovation a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.aesthetic {
+    display: flex;
+    flex-direction: column;
+    max-width: 630px;
+    width: 100%;
+    max-height: 490px;
+    background-image: url("../images/patent.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 306px 400px;
+    padding-top: 35px;
+}
+
+.aesthetic-heading {
+    max-width: 186px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    background-color: var(--primary);
+    margin-bottom: 30px;
+}
+
+.aesthetic-box {
+    display: flex;
+    align-items: center;
+}
+
+.aesthetic-box span {
+    max-width: 145px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.aesthetic-box span:first-of-type {
+    font-size: 48px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.aesthetic-box.active span {
+    max-width: 320px;
+    font-size: 28px;
+    opacity: 1;
+    cursor: auto;
+}
+
+.aesthetic-box.active span:first-of-type {
+    font-size: 96px;
+    color: var(--secondary);
+    margin-right: 30px;
+}
+
+.news-switches {
+    background-color: var(--primary);
+    padding-top: 35px;
+    min-width: 526px;
+}
+
+.news-switches span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    width: 101px;
+    background-color: var(--secondary);
+    margin-left: 40px;
+}
+
+.news-switches div {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 35px 40px;
+    min-width: 446px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.news-switches div:first-of-type {
+    margin-top: 40px;
+}
+
+.news-switches .active {
+    background-color: var(--secondary);
+}
+
+.news-info {
+    background-color: rgba(0, 134, 138, 0.1);
+    padding: 35px 60px 0;
+}
+
+.news-info h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.news-info ul {
+    padding-inline-start: 20px;
+}
+
+.news-info li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.news-info span {
+    color: #000000;
+}

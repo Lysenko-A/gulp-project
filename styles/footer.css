@@ -1,0 +1,120 @@
+.footer {
+    padding-top: 100px;
+}
+
+.footer-wrap {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.services-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1042px;
+    width: 100%;
+    margin: 0 -95px;
+}
+
+.services {
+    max-width: 158px;
+    margin: 0 95px 30px;
+}
+
+.services h4 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.services ul {
+    padding-inline-start: 0;
+}
+
+.services li, .services a {
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 238px;
+    margin-left: 135px;
+}
+
+.footer-contact span {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 150%;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-contact address {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+
+.footer-contact button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    background-color: var(--secondary);
+    border: none;
+    max-width: 165px;
+    cursor: pointer;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(196, 196, 196, 0.5);
+    border-left: 1px solid rgba(196, 196, 196, 0.5);
+    padding-left: 25px;
+}
+
+.footer-nav p {
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.politics-link {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: #000000;
+    border-right: 1px solid rgba(196, 196, 196, 0.5);
+    padding: 40px 30px;
+}
