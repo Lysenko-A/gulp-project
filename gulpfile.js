@@ -22,6 +22,7 @@ const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const pngquant = require('imagemin-pngquant');
 const webp = require('gulp-webp');
 const del = require('del');
+const ghPages = require('gulp-gh-pages');
 
 /**
  * Include projectConfig file
@@ -263,3 +264,8 @@ exports.default = gulp.series(
     gulp.parallel(njk, scss, script, image, font),
     gulp.parallel(browsersync, watch)
 );
+
+gulp.task('deploy', function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
