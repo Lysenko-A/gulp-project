@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>{{ title }}</title>
-    <meta name="description" content="{{ meta_description }}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="./css/index.min.css">
   </head>
 
-  <body {% if bodyClass %}class="{{ bodyClass }}" {% endif %}>
-    {% include "templates/_base/_header.html" %}
+  <body>
+    <header>Header</header>
 
-    {% block content %}{% endblock %}
+    <main>
+      <h1>Title</h1>
+    </main>
 
-    {% include "templates/_base/_footer.html" %}
+    <footer>Footer</footer>
 
     <script src="./js/index.min.js"></script>
   </body>
