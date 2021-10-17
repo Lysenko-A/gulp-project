@@ -1,1 +1,23 @@
-@import "_base/_general";
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+$primary: red;
+$btn-font-size: 20px;
+$btn-link-color: yellow;
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "../../node_modules/bootstrap/scss/accordion";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/bootstrap-utilities";
+
+@import "./_base/general";
+
+html {
+  font-size: 20px;
+}
