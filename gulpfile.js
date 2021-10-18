@@ -94,6 +94,17 @@ path.watch.font[0] = path.src.font[0];
 path.watch.font[1] = "!" + path.src.font[0].slice(0, -6) + "src/*.*";
 
 /**
+ * Assets path
+ */
+path.src.assets[0] = path.src.srcPath + path.src.assets[0];
+
+path.dist.assets = path.dist.distPath + path.dist.assets;
+
+path.watch.assets = [];
+path.watch.assets[0] = path.src.assets[0];
+
+
+/**
  * Dev check
  */
 const isDev = function(){
@@ -190,7 +201,7 @@ function imageMin(){
     return gulp.src(path.src.image)
         .pipe(newer(path.dist.image))
         .pipe(imagemin([
-            
+
             imageminJpegRecompress({
                 progressive: true,
                 min: 70, max: 75
@@ -239,6 +250,15 @@ function font() {
 }
 
 /**
+ * Assets
+ */
+function assets() {
+    return gulp.src(path.src.assets)
+        .pipe(gulp.dest(path.dist.assets))
+        .pipe(browserSync.reload({stream: true}))
+}
+
+/**
  * Clean
  */
  function clean(){
@@ -254,6 +274,7 @@ function watch(){
     gulp.watch(path.watch.script, script);
     gulp.watch(path.watch.image, image);
     gulp.watch(path.watch.font, font);
+    gulp.watch(path.watch.assets, assets);
 }
 
 /**
@@ -261,7 +282,7 @@ function watch(){
  */
 exports.default = gulp.series(
     gulp.parallel(clean),
-    gulp.parallel(njk, scss, script, image, font),
+    gulp.parallel(njk, scss, script, image, font, assets),
     gulp.parallel(browsersync, watch)
 );
 
